@@ -1,0 +1,15 @@
+- pipeline.id: p1
+  path.config: "/root/kfk_credito.modelo_digital.conf"
+  pipeline.workers: 2
+- pipeline.id: p2
+  path.config: "/root/kfk_credito.historico_risco_fraude.conf"
+  pipeline.workers: 1
+- pipeline.id: p3
+  path.config: "/root/kfk_credito.memoria_elegibilidade.conf"
+  pipeline.workers: 2
+- pipeline.id: p4
+  path.config: "/root/kfk_credito.memoria_operacao.conf"
+  pipeline.workers: 5
+- pipeline.id: p5
+  path.config: "/root/kfk_credito.modelo_esteira_cp.conf"
+  pipeline.workers: 10
