@@ -1,6 +1,11 @@
 # logstash-data-pipeline
 This project shows how to migrade data from/to elasticsearch with pipeline
 
+## Install java
+
+  `yum install java-1.8.0-openjdk -y`
+  
+  
 ## Install plugings
   `logstash-plugin install logstash-input-elasticsearch`
 
