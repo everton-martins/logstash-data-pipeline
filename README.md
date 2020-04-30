@@ -5,11 +5,17 @@ This project shows how to migrade data from/to elasticsearch with pipeline
 
   `yum install java-1.8.0-openjdk -y`
   
-  
-## Install plugings
-  `logstash-plugin install logstash-input-elasticsearch`
+## Install logstash
 
-  `logstash-plugin install logstash-output-elasticsearch`
+  `wget https://artifacts.elastic.co/downloads/logstash/logstash-7.6.2.tar.gz`
+  `tar -xvf logstash-7.6.2.tar.gz`
+
+## Install plugings
+  `cd logstash-7.6.2/bin/`
+  
+  `./logstash-plugin install logstash-input-elasticsearch`
+
+  `./logstash-plugin install logstash-output-elasticsearch`
 
 ## Config pipeline
   `vi /root/kfk_credito.memoria_operacao.conf`
