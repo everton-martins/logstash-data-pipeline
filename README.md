@@ -20,9 +20,11 @@ This project shows how to migrade data from/to elasticsearch with pipeline
 ## Config pipeline
   `vi /root/kfk_credito.memoria_operacao.conf`
   
-  `vi /usr/share/logstash/config/pipelines.yml`
+  `vi /root/logstash-7.6.2/config/pipelines.yml`
 
 ## Run pipeline
 
   `logstash -e`
+  or
+  `logstash --config.reload.automatic`
   
