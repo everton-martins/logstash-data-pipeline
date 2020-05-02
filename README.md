@@ -26,5 +26,5 @@ This project shows how to migrade data from/to elasticsearch with pipeline
 
   `logstash -e`
   or
-  `logstash --config.reload.automatic`
+  `nohup  ./logstash-7.6.2/bin/logstash -r -V --log.level info  &`
   
